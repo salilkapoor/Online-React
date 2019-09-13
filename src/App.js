@@ -1,5 +1,5 @@
 import React from "react";
-import Persons from "./Components/Persons/Persons";
+import Persons from "./Containers/Persons/Persons";
 
 function App() {
   return (
