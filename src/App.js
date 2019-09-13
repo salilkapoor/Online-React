@@ -1,10 +1,10 @@
 import React from "react";
+import Persons from "./Components/Persons/Persons";
 
 function App() {
   return (
     <div className="App">
-      <h1>Basic</h1>
-      <h2>Basic Text</h2>
+      <Persons />
     </div>
   );
 }
