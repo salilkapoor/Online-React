@@ -31,7 +31,7 @@ const reducer = (state = initState, action) => {
       };
     case actionTypes.PERSONS_RECIVED:
       return {
-        ...state
+        persons: action.json
       };
     default:
       return state;
