@@ -14,7 +14,6 @@ const initState = {
   ]
 };
 const reducer = (state = initState, action) => {
-  debugger;
   switch (action.type) {
     case actionTypes.ADD_PERSON:
       return {
