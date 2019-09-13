@@ -14,6 +14,7 @@ const initState = {
   ]
 };
 const reducer = (state = initState, action) => {
+  debugger;
   switch (action.type) {
     case actionTypes.ADD_PERSON:
       return {
@@ -23,6 +24,14 @@ const reducer = (state = initState, action) => {
     case actionTypes.DELETE_PERSON:
       return {
         persons: state.persons.filter(person => person.id !== action.personId)
+      };
+    case actionTypes.FETCH_PERSONS:
+      return {
+        ...state
+      };
+    case actionTypes.PERSONS_RECIVED:
+      return {
+        ...state
       };
     default:
       return state;

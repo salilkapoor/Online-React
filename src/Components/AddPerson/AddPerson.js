@@ -1,11 +1,9 @@
 import React from "react";
 
-import "./AddPerson.css";
+import Button from "../UI/Button/Button";
 
 const addPerson = props => (
-  <div className="AddPerson">
-    <button onClick={props.personAdded}>Add Person</button>
-  </div>
+  <Button clickFunctionName={props.personAdded}>Add Person</Button>
 );
 
 export default addPerson;
